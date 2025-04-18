@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  color:#212529;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  font-weight: bold !important;
+  display: none !important; 
+}
+@media (min-width: 590px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 25px !important;
+    font-weight: bold !important;
+  }
+}
+
+/* Style the inactive pagination dots as bars */
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 3px !important;
+  background-color: white !important;
+  opacity: 1 !important;
+  border-radius: 0 !important; /* No curves */
+  margin: 0 5px;
+}
+
+/* Style the active pagination dot (orange color) */
+.swiper-pagination-bullet-active {
+  background-color: orange !important;
+  width: 20px !important;
+  height: 3px !important;
+  border-radius: 0 !important; /* No curves here too */
+}
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation: rotate360 2s linear infinite;
+}
+
+
