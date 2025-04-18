@@ -79,7 +79,7 @@ const Left = ({ category }) => {
       <p className="text-zinc-900">Category: {category}</p>
       <hr className="text-gray-200" />
 
-      <Link href='https://www.dsom.in/?utm_source=AddressGuru_India&utm_medium=AddressGuru&utm_campaign=AddressGuru_Listing'  className="border-[0.1px] border-zinc-300 hover:text-white text-center hover:bg-green-700 delay-100 duration-300 rounded-full text-[12px] whitespace-nowrap w-24 py-1 px-2 text-zinc-700">
+      <Link target="_blank" href='https://www.dsom.in/?utm_source=AddressGuru_India&utm_medium=AddressGuru&utm_campaign=AddressGuru_Listing'  className="border-[0.1px] border-zinc-300 hover:text-white text-center hover:bg-green-700 delay-100 duration-300 rounded-full text-[12px] whitespace-nowrap w-24 py-1 px-2 text-zinc-700">
         Visit Website
       </Link>
     </div>

@@ -28,7 +28,7 @@ const Report = ({title}) => {
       </div>
 
       <div onClick={claimPopHandel}
-       className="flex items-center cursor-pointer mr-1">
+       className="flex items-center gap-[2px] cursor-pointer mr-1">
         <FaRegHandPointRight className="text-sm text-blue-600" />
         <p>Claim the Business</p>
       </div>

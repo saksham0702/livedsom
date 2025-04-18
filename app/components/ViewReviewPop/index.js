@@ -25,11 +25,11 @@ const ViewReviewPop = ({ isClose, isOpen, title, reviews }) => {
     <>
       {isOpen && (
         <div className="fixed z-[999999999] bg-black/50 w-full h-full top-0 left-0 flex items-center  justify-center">
-          <div className=" relative h-[95vh] w-xl bg-white overflow-y-scroll mx-2 rounded-lg ">
+          <div className=" relative h-[85vh] w-xl bg-white overflow-y-scroll mx-2 rounded-lg ">
             {/* Header */}
             <div className="flex justify-between font-semibold p-2">
               <div className="max-w-sm">
-                <h1 className="text-start mb-2 sm:text-2xl text-[18px] font-medium">
+                <h1 className="text-start mb-2 sm:text-2xl text-[18px] font-bold">
                   {title}
                 </h1>
               </div>
@@ -70,7 +70,7 @@ const ViewReviewPop = ({ isClose, isOpen, title, reviews }) => {
               <div className="flex flex-col justify-between pr-5 items-center mt-3">
                 <button
                   onClick={() => setPop(true)}
-                  className=" sm:text-lg text-[14px] whitespace-nowrap underline mb-2"
+                  className=" sm:text-lg text-[14px] whitespace-nowrap font-semibold underline mb-2"
                 >
                   + Write a Review
                 </button>
@@ -144,7 +144,7 @@ const ViewReviewPop = ({ isClose, isOpen, title, reviews }) => {
           </div>
         </div>
       )}
-      <ReviewPopup isOpen={pop} isClose={() => setPop(false)} />
+      <ReviewPopup title={title} isOpen={pop} isClose={() => setPop(false)} />
     </>
   );
 };

@@ -32,6 +32,7 @@ import AddressPopUp from "./AddressPopup";
 import ViewReviewPop from "./ViewReviewPop";
 
 const Hero = () => {
+
   const [data, setData] = useState([]);
   const [pop, setPop] = useState({
     share: false,
@@ -40,6 +41,7 @@ const Hero = () => {
     review: false,
     view: false,
   });
+  
 
   const [enquire, setEnquire] = useState(false);
 
@@ -233,7 +235,7 @@ const Hero = () => {
               </div>
 
               <div className="flex items-center text-xs font-semibold gap-1 bg-[#155dfc] text-white px-2  rounded-lg">
-                <FaStar className="text-orange-400 text-xs" />
+                <FaStar className="text-orange-400 text-xs font-semibold" />
                 <p onClick={()=>setPop({...pop, view: true})} >View Reviews</p>
               </div>
             </div>
@@ -275,7 +277,9 @@ const Hero = () => {
                 <Button text="Enquiry" Icon={AiFillMessage} />
               </div>
               <div className=" border-1 text-gray-600 text-md  rounded-sm text-center p-1.5 ">
-                <FaGlobe />
+               <Link target="_blank" href='https://www.dsom.in/?utm_source=AddressGuru_India&utm_medium=AddressGuru&utm_campaign=AddressGuru_Listing'>
+               <FaGlobe />
+               </Link> 
               </div>
             </div>
             {/* button section ends */}

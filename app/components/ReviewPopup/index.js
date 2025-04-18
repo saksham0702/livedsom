@@ -16,7 +16,7 @@ const ReviewPopup = ({ isClose, isOpen, title }) => {
       {isOpen && (
         <div className="fixed z-[999999999] bg-black/50 w-full h-full top-0 left-0 flex items-center justify-center">
           
-          <div className="relative w-[390px] sm:w-[370px] bg-white rounded-lg shadow-lg p-2">
+          <div className="relative w-[390px] sm:w-[370px] bg-white rounded-lg shadow-lg py-3 px-4">
             
             {/* Close icon */}
             <button onClick={isClose} className="absolute top-3 right-3 text-xl text-gray-500 hover:text-red-500">
@@ -24,7 +24,7 @@ const ReviewPopup = ({ isClose, isOpen, title }) => {
             </button>
 
             {/* Title */}
-            <h2 className="text-lg font-semibold mb-4 ">
+            <h2 className="text-lg font-bold mb-4 w-80 lg:w-auto ">
               Review: {title}
             </h2>
 
