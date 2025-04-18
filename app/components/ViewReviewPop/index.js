@@ -70,7 +70,7 @@ const ViewReviewPop = ({ isClose, isOpen, title, reviews }) => {
               <div className="flex flex-col justify-between pr-5 items-center mt-3">
                 <button
                   onClick={() => setPop(true)}
-                  className=" sm:text-lg text-[14px] whitespace-nowrap font-semibold underline mb-2"
+                  className=" sm:text-lg text-[14px] whitespace-nowrap font-bold underline mb-2"
                 >
                   + Write a Review
                 </button>

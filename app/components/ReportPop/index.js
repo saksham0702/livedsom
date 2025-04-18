@@ -1,6 +1,6 @@
 "use client";
 
-import { RxCross1 } from "react-icons/rx";
+import { RxCrossCircled } from "react-icons/rx";
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useRef, useState } from "react";
 
@@ -49,9 +49,9 @@ function ReportPop({ isOpen, isClose, title}) {
                               
                              </span>
                            </div>
-                           <RxCross1
+                           <RxCrossCircled
                              onClick={isClose}
-                             className="cursor-pointer border-2 rounded-full text-lg  text-red-500 border-red-500 hover:text-red-500"
+                             className="cursor-pointer  rounded-full text-2xl  text-red-500  hover:text-red-500"
                            />
                          </div>
               

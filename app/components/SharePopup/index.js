@@ -3,6 +3,7 @@ import { RxCross1 } from "react-icons/rx";
 import { FaWhatsapp, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
+import { RxCrossCircled } from "react-icons/rx";
 
 const SharePopup = ({ isClose, isOpen }) => {
   return (
@@ -11,14 +12,14 @@ const SharePopup = ({ isClose, isOpen }) => {
         <div className="fixed z-[999999999] bg-black/50 w-full h-[100vh] top-0 left-0 m-0">
           <div className=" flex items-center h-full w-full justify-center mt-10 ">
             <div className="bg-white relative bottom-7 flex justify-center items-center flex-col py-2 px-3 rounded-md max-w-md w-[90%]">
-              <div className="  mr-2 absolute  right-0 top-1 cursor-pointer   border-2 rounded-full border-blue-700">
-                <RxCross1
+              <div className="  mr-2 absolute  right-0 top-1 cursor-pointer   rounded-full ">
+                <RxCrossCircled
                   onClick={isClose}
-                  className=" text-sm text-blue-700 "
+                  className=" text-2xl text-blue-700 "
                 />
               </div>
 
-              <h1 className=" mt-4 text-xl font-bold">Share on</h1>
+              <h1 className=" mt-2 text-xl font-bold">Share on</h1>
 
               {/* icons area */}
               <div className="flex gap-2 mt-2 mb-1">

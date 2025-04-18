@@ -2,7 +2,7 @@
 import React, { useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
-import { RxCross1 } from "react-icons/rx";
+import { RxCrossCircled } from "react-icons/rx";
 
 const ClaimPop = ({ isOpen, isClose, title }) => {
   const [isVerified, setIsVerified] = useState(false);
@@ -32,9 +32,10 @@ const ClaimPop = ({ isOpen, isClose, title }) => {
                     Claim Ownership
                   </span>
                 </div>
-                <RxCross1
+
+                <RxCrossCircled
                   onClick={isClose}
-                  className="cursor-pointer border-2 rounded-full text-lg  text-red-500 border-red-500 hover:text-red-500"
+                  className="cursor-pointer  rounded-full text-2xl  text-red-500  hover:text-red-500"
                 />
               </div>
               <h1 className="text-start text-[16px] font-bold mb-2">{title}</h1>
@@ -80,10 +81,10 @@ const ClaimPop = ({ isOpen, isClose, title }) => {
                   />
                 </label>
                 <label className="flex pl-1 gap-1 text-[14px]">
-                  <input type="checkbox" />By Claiming I agree to terms & conditions.
+                  <input type="checkbox" />
+                  By Claiming I agree to terms & conditions.
                 </label>
 
-               
                 <div className="flex items-center justify-center  ">
                   <ReCAPTCHA
                     sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
