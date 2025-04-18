@@ -33,6 +33,19 @@ import ViewReviewPop from "./ViewReviewPop";
 
 const Hero = () => {
 
+  const businessHours = {
+    Mon: "08:00 AM - 08:00 PM",
+    Tue: "08:00 AM - 08:00 PM",
+    Wed: "08:00 AM - 08:00 PM",
+    Thu: "08:00 AM - 08:00 PM",
+    Fri: "08:00 AM - 08:00 PM",
+    Sat: "08:00 AM - 08:00 PM",
+    Sun: "08:00 AM - 08:00 PM",
+  };
+
+  // Convert JS weekday to keys used in the object
+const daysMap = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
   const [data, setData] = useState([]);
   const [pop, setPop] = useState({
     share: false,
@@ -266,14 +279,14 @@ const Hero = () => {
             <hr className="w-full h-[1px] text-gray-200 px-5" />
 
             {/* Buttons section */}
-            <div className="flex justify-between  min-md:w-xl  items-center relative ">
+            <div onClick={()=>setPop({...pop, number: true})} className="flex justify-between  min-md:w-xl  items-center relative ">
               <div className="bg-[#0dcaf0] text-[14px]   rounded-sm text-center py-1 px-2">
-                <Button text="Call" Icon={FaPhoneVolume} />
+                <Button  text="Call" Icon={FaPhoneVolume} />
               </div>
-              <div className="bg-[#00a63e] text-[14px]   text-white rounded-sm text-center  py-1 px-2 ">
+              <Link href="whatsapp://send/?phone=919410102425&text=Hi,%0a*DSOM+-+Dehradun+School+of+Online+Marketing*,%20I%20am%20looking%20for%20Coaching+Institute%0a%0aI%20found%20your%20business%20on%20*AddressGuru%20India*%20link%20is%20https://www.addressguru.in/dsom-dehradun-school-of-online-marketing" className="bg-[#00a63e] text-[14px]   text-white rounded-sm text-center  py-1 px-2 ">
                 <Button text="WhatsApp" Icon={FaWhatsapp} />
-              </div>
-              <div className="bg-[#198754] text-[14px]  text-white rounded-sm text-center py-1 px-1 pr-2">
+              </Link>
+              <div onClick={() => setEnquire(true)} className="bg-[#198754] text-[14px]  text-white rounded-sm text-center py-1 px-1 pr-2">
                 <Button text="Enquiry" Icon={AiFillMessage} />
               </div>
               <div className=" border-1 text-gray-600 text-md  rounded-sm text-center p-1.5 ">

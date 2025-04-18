@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -18,7 +17,7 @@ const Slider = ({sliderImage,at,id}) => {
   };
   return (
     
-    <div className=" w-full h-[160px] md:h-[300px]  lg:w-[720px]   lg:h-[400px] lg:mt-5 ">
+    <div className=" w-full h-[180px] md:h-[300px]  lg:w-[720px]   lg:h-[400px] lg:mt-5 ">
     {/* popsection ends */}
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
@@ -28,7 +27,7 @@ const Slider = ({sliderImage,at,id}) => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 4500 }}
         loop={true}
-        className="min-w-full h-full  sm:h-[280px] md:h-full md:w-full rounded-md"
+        className="min-w-full h-full  sm:h-[350px] md:h-full md:w-full rounded-md"
       >
            <div onClick={handleOpen} className="absolute top-0 right-0 h-7 w-7 cursor-pointer shadow-md border-1 border-gray-200 flex items-center justify-center rounded-md bg-white text-black sm:hidden z-10">
               <FaShare />
